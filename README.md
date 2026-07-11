@@ -4,20 +4,6 @@ Collaborative project/task management app for the HappyRobot FS Challenge.
 
 The system uses a Go backend, Postgres source of truth, project-scoped WebSocket sync, cursor-paginated task loading, per-task comments, archived projects, task dependencies, a board-level dependency graph, and a project analytics dashboard.
 
-## Deliverables Checklist
-
-- Working Go backend API.
-- Working Next.js frontend.
-- Local Postgres via Docker Compose.
-- CI configured with backend tests, frontend typecheck/build, and dependency audit.
-- Architecture, synchronization, scaling, tradeoffs, technology choices, and data flow documented below.
-
-GitHub submission note:
-
-- Create the final GitHub repo as **private**.
-- Push this project to that repo.
-- Invite `carlos-happyrobot` and `joaquinllopez00` as collaborators.
-
 ## Requirements
 
 - Go 1.22+
