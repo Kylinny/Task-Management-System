@@ -1051,6 +1051,15 @@ button {
   flex: 1;
 }
 
+.summary-keyword {
+  color: var(--accent-dark);
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  margin-right: 7px;
+  text-transform: uppercase;
+}
+
 .task-title-input {
   font-size: 18px;
   font-weight: 800;
@@ -1062,6 +1071,19 @@ button {
 
 .task-summary-textarea {
   min-height: 82px;
+}
+
+.task-timestamps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.task-timestamps span {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.3;
 }
 
 .detail-section {

@@ -1309,10 +1309,17 @@ export default function Home() {
                     disabled={selectedProjectIsArchived}
                     title={selectedProjectIsArchived ? "Restore the project before editing." : "Click to edit task summary."}
                   >
-                    <span>{selectedTask.configuration.description || "Click to add a task summary."}</span>
+                    <span>
+                      <strong className="summary-keyword">Summary</strong>
+                      {selectedTask.configuration.description || "Click to add a task summary."}
+                    </span>
                     {!selectedProjectIsArchived ? <Pencil size={13} /> : null}
                   </button>
                 )}
+                <div className="task-timestamps" aria-label="Task timestamps">
+                  <span>Created {formatDateTime(selectedTask.createdAt)}</span>
+                  <span>Updated {formatDateTime(selectedTask.updatedAt)}</span>
+                </div>
 
                 <div className="detail-section">
                   <label className="panel-title" htmlFor="status">
@@ -1808,6 +1815,17 @@ function readError(err: unknown) {
 
 function formatStatus(status: TaskStatus) {
   return status.replace("_", " ");
+}
+
+function formatDateTime(value: string) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) {
+    return "unknown";
+  }
+  return new Intl.DateTimeFormat(undefined, {
+    dateStyle: "medium",
+    timeStyle: "short",
+  }).format(date);
 }
 
 function dependencyEdgePath(from: DependencyGraphNode, to: DependencyGraphNode) {

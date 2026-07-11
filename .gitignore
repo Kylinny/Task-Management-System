@@ -16,6 +16,7 @@ frontend/.next/
 frontend/out/
 frontend/coverage/
 frontend/.turbo/
+frontend/tsconfig.tsbuildinfo
 
 # Logs
 *.log
@@ -27,4 +28,4 @@ yarn-error.log*
 postgres_data/
 
 # Local demo notes, not part of GitHub submission
-docs/
+docs/demo-reasoning.md
