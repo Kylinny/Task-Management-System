@@ -25,3 +25,6 @@ yarn-error.log*
 
 # Local database data
 postgres_data/
+
+# Local demo notes, not part of GitHub submission
+docs/
