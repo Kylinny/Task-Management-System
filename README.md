@@ -6,9 +6,7 @@ The system uses a Go backend, Postgres source of truth, project-scoped WebSocket
 
 ## Demo Video
 
-<video src="./demo.mp4" controls width="100%" title="HappyRobot Task Management demo"></video>
-
-If the embedded player does not render on GitHub, [watch the demo video](./demo.mp4).
+[Watch the demo video](./demo.mp4)
 
 ## Deliverables Checklist
 
