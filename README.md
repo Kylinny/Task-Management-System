@@ -6,7 +6,9 @@ The system uses a Go backend, Postgres source of truth, project-scoped WebSocket
 
 ## Demo Video
 
-[Watch the demo video](./demo.mp4)
+[Watch the demo video](./demo.mp4) 
+
+
 
 ## Deliverables Checklist
 
