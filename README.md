@@ -1,6 +1,4 @@
-# HappyRobot Task Management
 
-Collaborative project/task management app for the HappyRobot FS Challenge.
 
 The system uses a Go backend, Postgres source of truth, project-scoped WebSocket sync, cursor-paginated task loading, per-task comments, archived projects, task dependencies, a board-level dependency graph, and a project analytics dashboard.
 
